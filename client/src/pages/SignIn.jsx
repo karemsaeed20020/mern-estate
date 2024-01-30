@@ -6,6 +6,7 @@ import {
   signInSuccess,
   signInFailure,
 } from '../redux/user/userSlice';
+import OAurh from "../components/OAurh";
 
 const SignIn = () => {
     const [formData, setFormData] = useState({});
@@ -49,6 +50,7 @@ const SignIn = () => {
         <input type="email" placeholder="email" id="email" className="border p-3 rounded-lg" onChange={handleChange} />
         <input type="password" placeholder="password" id="password" className="border p-3 rounded-lg" onChange={handleChange} />
         <button disabled={loading} className="bg-slate-700 text-white p-3 rounded-lg hover:opacity-90 disabled:opacity-80 uppercase">{loading ? 'Loading...' : 'Sign In'}</button>
+        <OAurh />
       </form>
       <div className="flex gap-2 mt-5">
         <p>Dont Have an account?</p>
