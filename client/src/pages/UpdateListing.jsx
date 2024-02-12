@@ -368,7 +368,7 @@ const CreateListing = () => {
               </div>
             ))}
           <button disabled={loading || uploading} className="text-white bg-slate-700 rounded-lg hover:opacity-95 disabled:opacity-80 p-3 uppercase">
-            {loading ? 'Creating...' : 'Update listing'}
+            {loading ? 'Updating...' : 'Update listing'}
           </button>
           {error && <p className='text-red-700 text-sm'>{error}</p>}
         </div>
